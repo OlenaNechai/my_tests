@@ -40,3 +40,7 @@ class Human:
     @property
     def gender(self) -> str:
         return self.__gender
+
+    @property
+    def name(self) -> str:
+        return self.__name

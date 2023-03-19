@@ -13,4 +13,6 @@ def create_human_with_params():
 
 @pytest.fixture()
 def create_dead_human():
-    return Human('Mike', 100, 'male')
+    dead_human = Human('Mike', 100, 'male')
+    dead_human.grow()
+    return dead_human
