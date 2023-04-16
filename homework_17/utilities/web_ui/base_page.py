@@ -46,6 +46,6 @@ class BasePage:
     def _wait_until_element_visible(self, locator):
         return self.__wait.until(EC.visibility_of_element_located(locator))
 
-    def _get_visible_text(self, locator):
+    def _get_property(self, locator):
         element = self._wait_until_element_visible(locator)
-        return element.get_attribute('value')
+        return element.get_property('value')

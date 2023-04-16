@@ -13,11 +13,8 @@ def get_application_url():
 
 def get_user_creds():
     return (config.get('user_data', 'email'),
-            config.get('user_data', 'password'))
-
-
-def get_wrong_user_creds():
-    return (config.get('wrong_user_data', 'email'),
+            config.get('user_data', 'password'),
+            config.get('wrong_user_data', 'email'),
             config.get('wrong_user_data', 'password'))
 
 

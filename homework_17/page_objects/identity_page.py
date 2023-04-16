@@ -17,11 +17,11 @@ class IdentityPage(BasePage):
     def get_identity_page_header(self):
         return self._get_text(self.__identity_header)
 
-    def check_user_email(self):
-        return self._get_visible_text(self.__email_input)
+    def get_user_email(self):
+        return self._get_property(self.__email_input)
 
-    def check_user_name(self):
-        return self._get_visible_text(self.__name_input)
+    def get_user_name(self):
+        return self._get_property(self.__name_input)
 
-    def check_user_surname(self):
-        return self._get_visible_text(self.__surname_input)
+    def get_user_surname(self):
+        return self._get_property(self.__surname_input)
