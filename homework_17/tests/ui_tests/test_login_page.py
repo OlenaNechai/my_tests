@@ -5,10 +5,10 @@ from homework_17.utilities.config_reader import get_user_creds
 
 @pytest.mark.smoke
 @pytest.mark.regression
-def test_successful_login(open_login_page):
+def test_successful_login(open_login_page, env):
     login_page = open_login_page
-    my_account_page = login_page.set_email(get_user_creds()[0]).set_password(
-        get_user_creds()[1]).click_login_button()
+    my_account_page = login_page.set_email(env.email).set_password(
+        env.password).click_login_button()
     assert my_account_page.get_page_title() == "My account", 'My Account page is not displayed'
 
 
