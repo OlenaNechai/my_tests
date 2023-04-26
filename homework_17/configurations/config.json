@@ -6,5 +6,6 @@
   "surname": "neige",
   "wrong_email": "perceneigetukoni1@gmail.com",
   "wrong_password": "Nfm9f8Premtir",
-  "browser_id": 2
+  "browser_id": 2,
+  "base_api_url": "https://wizard-world-api.herokuapp.com"
 }
